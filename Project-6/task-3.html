@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    var n = parseInt(prompt("Enter any number of multiplication:"));
+    var i = 1;
+
+    class number {
+        table = () => {
+            do {
+                document.write("" + n + " * " + " " + i + "=" + n * i +"");
+                document.write("<br>");
+                i++;
+            }
+            while (i <= 10);
+        }
+    }
+    let obj = new number;
+    obj.table();
+</script>

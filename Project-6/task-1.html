@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    var phy = parseInt(prompt("Enter Your Physics Marks:"));
+    var che = parseInt(prompt("Enter Your Chemistry Marks:"));
+    var bio = parseInt(prompt("Enter Your Biology Marks:"));
+    var maths = parseInt(prompt("Enter Your Mathematics Marks:"));
+    var com = parseInt(prompt("Enter Your Computer Marks:"));
+
+    var per = (phy + che + bio + maths + com) * 100 / 500;
+    document.write("Precentage=" + per);
+    document.write("<br>");
+
+    class sub {
+        grade = () => {
+            if (per > 90) {
+                document.write("Your Grade A");
+            }
+            else if (per > 80) {
+                document.write("Your Grade B");
+            }
+            else if (per > 70) {
+                document.write("Your Grade C");
+            }
+            else if (per > 60) {
+                document.write("Your Grade D");
+            }
+            else if (per > 50) {
+                document.write("Your Grade E");
+            }
+            else if (per > 40) {
+                document.write("Your Grade F");
+            }
+        }
+    }
+    let obj=new sub;
+    obj.grade();    
+</script>
